@@ -79,6 +79,10 @@ Arrays.prototype.sortArray = function (func) {
     return this;
 }
 
+let arraya = new Array(2,55,35,24,26,24,6,63);
+arraya.sortArray((x , y)=> y - x)
+prt(arraya);
+
 var ArrayMethods = new Arrays(list_array);
 ArrayMethods.filterArray(x => x>5).sortArray((x , y)=> y - x);
 prt(ArrayMethods.ArrayVariable);
