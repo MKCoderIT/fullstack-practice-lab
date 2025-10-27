@@ -1,0 +1,134 @@
+html{
+    font-size: 100%;
+    font-family: Vazir;
+}
+
+.grid{
+    direction: ltr;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(min(100% , 100px) , 1fr));
+    grid-auto-rows: 100px;
+    gap: .6rem;
+    margin-bottom: 5rem;
+    padding: 0.5rem;
+}
+
+.grid .grid-items{
+    background-color: #5D688A;
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 6px;
+
+}
+
+.grid .subgrid{
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+}
+.grid .subgrid .grid-items{
+    background-color: orange;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit , minmax(min(300px , 100%) , 1fr));
+    gap: 1rem;
+    padding: .5rem;
+    margin: 0 auto 3rem;
+    max-width: 60rem;
+    align-items: stretch;
+    grid-auto-rows: auto;
+}
+
+
+.carts{
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    gap: 0;
+    border-radius: 2px;
+    padding : 1rem;
+}
+
+.carts .icon{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: .8rem;
+}
+
+.carts .headtext {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-block-end: 1rem;
+    padding-block-end: 1rem;
+}
+
+.carts .text{
+    line-height: 1.5rem;
+}
+
+.carts .headtext::after {
+    content: "";
+    display: block;
+    margin-top: .7rem;
+    width: 40%;
+    height: 1px;
+    background-color: currentColor;
+}
+
+.carts .button {
+    font-family: inherit;
+    font-weight: bold;
+    background-color:#00000000;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 8rem;
+    height: 2rem;
+    justify-self: end;
+    margin-block: 1.5rem .5rem;
+}
+
+.cart-laptop .icon{
+    background-image: url(ProjectFiles/laptop.png);
+}
+.cart-phone .icon{
+    background-image: url(ProjectFiles/phone.png);
+}
+.cart-prize .icon{
+    background-image: url(ProjectFiles/prize.png);
+}
+.cart-search .icon{
+    background-image: url(ProjectFiles/search.png);
+}
+.cart-megaphone .icon{
+    background-image: url(ProjectFiles/megaphone.png);
+}
+.cart-open-email .icon{
+    background-image: url(ProjectFiles/emailopen.png);
+}
+
+.cart-laptop{
+    background-color: #ffe1cc;
+}
+.cart-phone{
+    background-color: #d4f6ed;
+}
+.cart-prize{
+    background-color: #e3dbfa;
+}
+.cart-search{
+    background-color: #dff3fe;
+}
+.cart-megaphone{
+    background-color: #fbe2f4;
+}
+.cart-open-email{
+    background-color: #eceff4;
+}
+
