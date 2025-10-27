@@ -62,6 +62,8 @@ body{
 }
 .container_top .section{
     flex-basis: 66.67%;
+    container-type: inline-size;
+    container-name: cardsLayout;
 }
 
 .container_top .aside {
@@ -69,14 +71,21 @@ body{
 }
 
 .container_top .section .row{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     background-color: #C6BFBB;
     border-radius: 10px;
 
 }
 .container_top .section .rowTop {
-        margin-bottom: 0.6rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@container cardsLayout (min-width: 660px) {
+.container_top .section  .rowTop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.container_top .section .rowDown {
+    grid-template-columns: repeat(auto-fit , minmax(min(330px , 100%) , 1fr));
 }
 
 .container_top .section .rowTop .sectionItem{
