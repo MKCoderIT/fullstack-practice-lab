@@ -17,6 +17,9 @@ body{
     justify-content : space-between;
 
 }
+.smallMSearchlogo{
+    display: none;
+}
 
 .header .searchLogo {
     flex-basis: 24px;
@@ -27,6 +30,8 @@ body{
 .header .in-heder-left {
     margin-right: 1rem;
     display: flex;
+    flex-direction: row-reverse;
+    flex-wrap : wrap;
     justify-content: end;
     align-items: center;
     gap : .9rem;
@@ -52,54 +57,72 @@ body{
     color: #C6BFBB;
     font-weight: bold;
     padding-top: 3px;
+    text-align: center;
 }
 
 .container_top{
     display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
     gap: .5rem;
     margin-bottom: .4rem;
-
 }
+
+.container_top .aside{
+    background-color: #C6BFBB;
+    border-radius: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_top .aside .asideItem{
+    text-align: center;
+    background-color: #285669;
+    border: 5px solid #928477;
+    border-radius: 10px;
+    margin: .2rem;
+    padding: 2rem;
+}
+
 .container_top .section{
-    flex-basis: 66.67%;
-    container-type: inline-size;
-    container-name: cardsLayout;
-}
-
-.container_top .aside {
-    flex-basis: 33.33%;
+    flex-grow: 3;
+    border-radius: 10px;
+    overflow: hidden;
+    /* container-type: inline-size;
+    container-name: cardsLayout; */
 }
 
 .container_top .section .row{
     display: grid;
     background-color: #C6BFBB;
-    border-radius: 10px;
-
 }
 .container_top .section .rowTop {
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(4, 1fr);
 }
-@container cardsLayout (min-width: 660px) {
+
+/* @container cardsLayout (min-width: 660px) {
 .container_top .section  .rowTop {
     grid-template-columns: repeat(4, 1fr);
   }
-}
+} */
 .container_top .section .rowDown {
-    grid-template-columns: repeat(auto-fit , minmax(min(330px , 100%) , 1fr));
+    grid-template-columns: repeat(2 , 1fr);
 }
+
 
 .container_top .section .rowTop .sectionItem{
     padding: 2.2rem 1rem;
     margin: .4rem;
-    flex-basis: calc(25% - (2rem + .8rem));
     text-align: center;
-    display: block;
     border-radius: 10px;
-
 }
 .container_top .section .row .sectionItem{
     background-color: #928477;
 }
+
+
 
 .container_top .section .rowDown .sectionItem{
     padding: 3rem 1rem;
@@ -110,26 +133,66 @@ body{
     border-radius: 10px;
 }
 
-.container_top .aside{
-background-color: #C6BFBB;
-border-radius: 10px;
-display: flex;
-flex-direction: column;
-align-items: stretch;
-justify-content:center;
 
+
+@media only screen and (max-width : 768px){
+    .container_top .section .rowDown {
+        grid-template-columns: 1fr;
+    }
+    .container_top .section .rowTop {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-
-.container_top .aside .asideItem{
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #285669;
-    border: 5px solid #928477;
-    border-radius: 10px;
-    margin: .2rem;
+@media only screen and (max-width : 500px){
+    .container_top{
+        gap: 0;
+    }
+    .container_top .section .rowTop {
+        grid-template-columns: 1fr;
+    }
+    .container_top .aside{
+        flex-basis: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .container_top .section{
+        flex-basis: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+    .header .in-heder-left{
+        gap: 0.3rem;
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .header .in-heder-left .Logo{
+        padding: 3px;
+        margin-top: .4rem;
+    }
+    .header .searchLogo{
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width : 350px){
+    .header .in-heder-left{
+        flex-direction: row;
+        margin-right: 0;
+        justify-content: space-around;
+    }
+    .header .in-heder-left .Logo{
+        padding: 3px;
+        margin-top: .4rem;
+        flex-basis: 40%;
+    }
+    .smallMSearchlogo{
+        display: block;
+        flex-basis: 40%;
+        margin-left: auto;
+    }
+    .header{
+        justify-content: center;
+    }
+    .header > .searchLogo {
+        display: none;
+    }
 }
 
 .container_down {
