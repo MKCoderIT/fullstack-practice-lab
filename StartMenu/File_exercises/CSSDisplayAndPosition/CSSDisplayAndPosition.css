@@ -127,7 +127,6 @@ body{
 .container_top .section .rowDown .sectionItem{
     padding: 3rem 1rem;
     margin: 0.4rem;
-    flex-basis: calc(50% - (2rem + .8rem));
     text-align: center;
     display: block;
     border-radius: 10px;
