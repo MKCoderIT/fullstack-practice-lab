@@ -57,7 +57,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-right: auto;
-  width: fit-content;
+  max-width: calc(66rem + 4rem);
   padding: 2rem 4rem;
 }
 
@@ -139,6 +139,30 @@ body {
   background-size: cover;
   transform: rotateY(180deg);
 }
+
+/* ========== Download ========== */
+
+.downloads{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+.downloads__item{
+
+}
+
+.downloads__item > img{
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border-radius: 11px;
+}
+
+
 
 
 /* ================================
