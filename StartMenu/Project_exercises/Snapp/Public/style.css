@@ -1,0 +1,174 @@
+body {
+  height: 2000px;
+}
+
+/* ========== Header ========== */
+
+.site-header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 46px rgb(23 135 23 / 22%);
+  z-index: 100;
+}
+
+.site-header .container {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.nav__item a {
+  font-weight: 300;
+  color: #000;
+  text-decoration: none;
+}
+
+/* ========== Hero ========== */
+
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: #21AA58;
+  width: 100%;
+}
+
+.hero__content {
+  color: #fff;
+}
+
+.hero__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: auto;
+  width: fit-content;
+  padding: 2rem 4rem;
+}
+
+.hero__title {
+  font-weight: bold;
+  font-size: 2.3rem;
+  line-height: 4.2rem;
+  text-align: start;
+  text-wrap: balance;
+  margin-bottom: 1.2rem;
+}
+
+.hero__description {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  text-align: start;
+  margin-bottom: .4rem;
+}
+
+.hero__form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero__input-box {
+  display: flex;
+  align-items: center;
+  flex-basis: 60%;
+  padding: 0 .4rem;
+  border-bottom-width: 1px;
+  border-color: #fff;
+  border-style: solid;
+  width: fit-content;
+}
+
+.hero__input-box input::placeholder {
+  color: #fff;
+  font-size: .85rem;
+}
+
+.hero__input-box input:focus {
+  border-width: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+.hero__form > button {
+  background-color: #fff;
+  color: #21AA58;
+  padding: 1rem;
+  border-radius: 7px;
+  font-size: .9rem;
+}
+
+.hero__app-btn {
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 7px;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  width: 100%;
+  font-weight: bold;
+}
+
+.hero__content,
+.hero__media {
+  flex: 1 1 50%;
+}
+
+.hero__media span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url(./Images/intro_desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+
+/* ================================
+   ≥ 480px — small phones / large phones
+=================================== */
+@media (min-width: 480px) {
+
+}
+
+/* ================================
+   ≥ 768px — tablets
+=================================== */
+@media (min-width: 768px) {
+
+}
+
+/* ================================
+   ≥ 1024px — small laptops/desktops
+=================================== */
+@media (min-width: 1024px) {
+  .site-header .container {
+    padding: 2rem 5%;
+  }
+}
+
+/* ================================
+   ≥ 1280px — wide desktops
+=================================== */
+@media (min-width: 1280px) {
+  .site-header .container {
+    padding: 2rem 11%;
+  }
+}

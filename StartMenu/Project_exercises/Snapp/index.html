@@ -1,19 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snapp</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snapp</title>
 
-    <link rel="stylesheet" href="./Public/Base_style/Reset.css">
-    <link rel="stylesheet" href="./Public/style.css">
-
+  <link rel="stylesheet" href="./Public/Base_style/reset.css" />
+  <link rel="stylesheet" href="./Public/style.css" />
 </head>
-    <body>
+<body>
+  <header class="site-header">
+    <section class="container">
+      <div class="header__logo">
+        <img src="Public/Images/snappTextLogo.svg" alt="Snapp Logo" />
+      </div>
+      <nav class="header__nav">
+        <ul class="nav">
+          <li class="nav__item"><a href="#">سوپراپ اسنپ</a></li>
+          <li class="nav__item"><a href="#">ثبت نام راننده اسنپ</a></li>
+          <li class="nav__item"><a href="#">باشگاه رانندگان</a></li>
+          <li class="nav__item"><a href="#">پنل سازمانی</a></li>
+          <li class="nav__item"><a href="#">بلاگ</a></li>
+          <li class="nav__item"><a href="#">درباره اسنپ</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
 
-        <h1>طاها کونیه 223</h1>
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <section class="hero__box">
+          <h1 class="hero__title">
+            تجربه‌ی زندگی راحت‌تر، سریع‌تر و به‌صرفه‌تر با سوپراپلیکیشن اسنپ!
+          </h1>
+          <p class="hero__description">
+            از درخواست خودرو گرفته تا سفارش غذا، خرید سوپرمارکتی، خرید بلیط سفر،
+            رزرو هتل و... را میتوانید با اسنپ انجام دهید.
+          </p>
+          <form action="#" class="hero__form">
+            <div class="hero__input-box">
+              <input id="register-input" placeholder="09xxxxx6789" />
+            </div>
+            <button>ارسال لینک</button>
+          </form>
+          <button class="hero__app-btn">ورود به وب اپلیکیشن اسنپ</button>
+        </section>
+      </div>
 
-
-
-    </body>
+      <div class="hero__media">
+        <span></span>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
