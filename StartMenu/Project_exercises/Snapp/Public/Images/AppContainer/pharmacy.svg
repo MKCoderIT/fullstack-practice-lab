@@ -1,19 +1,31 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_0_635)">
-<rect x="2.00018" y="2" width="44" height="44" rx="10" fill="url(#paint0_linear_0_635)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M18.8097 9C17.6315 9 16.6764 9.95513 16.6764 11.1333V12.5989C16.6764 13.7771 17.6315 14.7323 18.8097 14.7323H28.8737C30.0519 14.7323 31.007 13.7771 31.007 12.5989V11.1333C31.007 9.95513 30.0519 9 28.8737 9H18.8097ZM17.3825 17.6618C17.3825 16.9344 17.9722 16.3447 18.6996 16.3447L28.9629 16.3447C29.6904 16.3447 30.2801 16.9344 30.2801 17.6618V19.5766C30.2801 19.7884 30.4091 19.979 30.6058 20.0577C32.5729 20.8445 33.8629 22.7497 33.8629 24.8684L33.8629 25.9114L29.3188 24.2575C27.0876 23.4454 24.6205 24.5958 23.8084 26.827C22.9963 29.0582 24.1468 31.5253 26.3779 32.3373L33.1111 34.788C33.3597 34.8785 33.6111 34.9446 33.8629 34.9876L33.8629 35.856C33.8629 37.3109 32.6835 38.4903 31.2286 38.4903L16.4344 38.4903C14.9795 38.4903 13.8001 37.3109 13.8001 35.856L13.8001 26.0179L13.8001 25.8058C13.8 23.4924 15.0137 21.3487 16.9973 20.1585L17.0628 20.1192C17.2611 20.0002 17.3825 19.7858 17.3825 19.5545V17.6618ZM32.9322 27.0762L35.6255 28.0564C37.1129 28.5978 37.8799 30.2425 37.3385 31.73C36.7971 33.2175 35.1524 33.9844 33.6649 33.443L30.9717 32.4627L32.9322 27.0762ZM28.8902 25.6066L31.5835 26.5869L29.6229 31.9735L26.9296 30.9932C25.4422 30.4518 24.6752 28.8071 25.2166 27.3196C25.758 25.8322 27.4027 25.0653 28.8902 25.6066Z" fill="url(#paint1_linear_0_635)"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 44 44" style="enable-background:new 0 0 44 44;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000069358370679818525060000010245073087404537505_);}
+</style>
+<g>
+	<g>
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="22" y1="46.3937" x2="22" y2="2.3937" gradientTransform="matrix(1 0 0 -1 0 46.3937)">
+			<stop  offset="0" style="stop-color:#B5E3FC"/>
+			<stop  offset="1" style="stop-color:#58C0F9"/>
+		</linearGradient>
+		<path class="st0" d="M10,0h24c5.5,0,10,4.5,10,10v24c0,5.5-4.5,10-10,10H10C4.5,44,0,39.5,0,34V10C0,4.5,4.5,0,10,0z"/>
+		
+			<linearGradient id="SVGID_00000085234296216558577620000004727845073020795520_" gradientUnits="userSpaceOnUse" x1="23.6559" y1="39.3937" x2="23.6559" y2="9.9034" gradientTransform="matrix(1 0 0 -1 0 46.3937)">
+			<stop  offset="0.6146" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#B5E3FC"/>
+		</linearGradient>
+		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000085234296216558577620000004727845073020795520_);" d="
+			M16.8,7c-1.2,0-2.1,1-2.1,2.1v1.5c0,1.2,1,2.1,2.1,2.1h10.1c1.2,0,2.1-1,2.1-2.1V9.1C29,8,28.1,7,26.9,7H16.8z M15.4,15.7
+			c0-0.7,0.6-1.3,1.3-1.3H27c0.7,0,1.3,0.6,1.3,1.3v1.9c0,0.2,0.1,0.4,0.3,0.5c2,0.8,3.3,2.7,3.3,4.8v1l-4.5-1.7
+			c-2.2-0.8-4.7,0.3-5.5,2.6c-0.8,2.2,0.3,4.7,2.6,5.5l6.7,2.5c0.2,0.1,0.5,0.2,0.8,0.2v0.9c0,1.5-1.2,2.6-2.6,2.6H14.4
+			c-1.5,0-2.6-1.2-2.6-2.6V24v-0.2c0-2.3,1.2-4.5,3.2-5.6l0.1,0c0.2-0.1,0.3-0.3,0.3-0.6V15.7z M30.9,25.1l2.7,1
+			c1.5,0.5,2.3,2.2,1.7,3.7s-2.2,2.3-3.7,1.7l-2.7-1L30.9,25.1z M26.9,23.6l2.7,1l-2,5.4l-2.7-1c-1.5-0.5-2.3-2.2-1.7-3.7
+			C23.8,23.8,25.4,23.1,26.9,23.6z"/>
+	</g>
 </g>
-<defs>
-<linearGradient id="paint0_linear_0_635" x1="24.0002" y1="2" x2="24.0002" y2="46" gradientUnits="userSpaceOnUse">
-<stop stop-color="#B5E3FC"/>
-<stop offset="1" stop-color="#58C0F9"/>
-</linearGradient>
-<linearGradient id="paint1_linear_0_635" x1="25.6561" y1="9" x2="25.6561" y2="38.4903" gradientUnits="userSpaceOnUse">
-<stop offset="0.614583" stop-color="white"/>
-<stop offset="1" stop-color="#B5E3FC"/>
-</linearGradient>
-<clipPath id="clip0_0_635">
-<rect width="48" height="48" fill="white"/>
-</clipPath>
-</defs>
 </svg>
