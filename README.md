@@ -17,5 +17,5 @@ Provided *as is* — for personal practice and experimentation.
 
 ---
 
-**Author:** Mohammad Kamyar Taslimi  
+**Author:** Kamyar Taslimi  
 [GitHub](https://github.com/kamyar-taslimi)
