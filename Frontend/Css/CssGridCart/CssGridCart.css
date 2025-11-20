@@ -1,134 +1,185 @@
-html{
+:root{
+    --header-line-width : 40%;
+}
+
+
+html {
     font-size: 100%;
     font-family: Vazir;
 }
 
-.grid{
+.grid {
     direction: ltr;
     display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(min(100% , 100px) , 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 100px), 1fr));
     grid-auto-rows: 100px;
     gap: .6rem;
     margin-bottom: 5rem;
     padding: 0.5rem;
 }
 
-.grid .grid-items{
+.grid__item {
     background-color: #5D688A;
     text-align: center;
     padding: 2.5rem;
     border-radius: 6px;
-
 }
 
-.grid .subgrid{
+.grid__subgrid {
     display: grid;
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
     grid-row: span 3;
 }
-.grid .subgrid .grid-items{
+
+.grid__subgrid .grid__item {
     background-color: orange;
 }
 
-.container{
-    display: grid;
-    grid-template-columns:repeat(auto-fit , minmax(min(300px , 100%) , 1fr));
-    gap: 1rem;
+
+.services {
     padding: .5rem;
     margin: 0 auto 3rem;
     max-width: 60rem;
-    align-items: stretch;
-    grid-auto-rows: auto;
 }
 
-
-.carts{
+.services__grid {
     display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 4;
-    gap: 0;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 1rem;
+    align-items: stretch;
+}
+
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     border-radius: 2px;
-    padding : 1rem;
+    padding: 1rem;
 }
 
-.carts .icon{
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-bottom: .8rem;
+.service-card__header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: .75rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    height: fit-content;
 }
 
-.carts .headtext {
+.service-card__title {
     font-weight: bold;
     font-size: 1.25rem;
     line-height: 1.3;
-    margin-block-end: 1rem;
-    padding-block-end: 1rem;
 }
 
-.carts .text{
-    line-height: 1.5rem;
-}
-
-.carts .headtext::after {
+.service-card__header::after {
     content: "";
-    display: block;
-    margin-top: .7rem;
+    position: absolute;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    bottom: 1.3rem;
     width: 40%;
     height: 1px;
     background-color: currentColor;
+    transition: width .3s ease;
 }
 
-.carts .button {
-    font-family: inherit;
-    font-weight: bold;
-    background-color:#00000000;
-    border-radius: 5px;
-    border: 2px solid black;
+/* .service-card--btn-hover .service-card__header::after {
+    width: 60%;
+} */
+
+.service-card__text {
+    line-height: 1.6;
+    margin-bottom: auto;
+
+}
+
+.service-card__button {
     width: 8rem;
     height: 2rem;
-    justify-self: end;
-    margin-block: 1.5rem .5rem;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #000000cc;
+    background-color: transparent;
+    color: #000000e8;
+    margin-block: 1.5rem 0.5rem;
+    margin-right: auto;
+    cursor: pointer;
+    transition: all .4s ease;
 }
 
-.cart-laptop .icon{
+.service-card:hover .service-card__header::after{
+    width: 60%;
+}
+
+.service-card__button:hover {
+    border: 1px solid #000000;
+    background-color: #0000000e;
+    color: #000000;
+}
+
+
+.service-card__icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.service-card__icon--laptop {
     background-image: url(ProjectFiles/laptop.png);
 }
-.cart-phone .icon{
+
+.service-card__icon--phone {
     background-image: url(ProjectFiles/phone.png);
 }
-.cart-prize .icon{
+
+.service-card__icon--prize {
     background-image: url(ProjectFiles/prize.png);
 }
-.cart-search .icon{
+
+.service-card__icon--search {
     background-image: url(ProjectFiles/search.png);
 }
-.cart-megaphone .icon{
+
+.service-card__icon--megaphone {
     background-image: url(ProjectFiles/megaphone.png);
 }
-.cart-open-email .icon{
+
+.service-card__icon--email {
     background-image: url(ProjectFiles/emailopen.png);
 }
 
-.cart-laptop{
+
+.service-card--laptop {
     background-color: #ffe1cc;
 }
-.cart-phone{
+
+.service-card--phone {
     background-color: #d4f6ed;
 }
-.cart-prize{
+
+.service-card--prize {
     background-color: #e3dbfa;
 }
-.cart-search{
+
+.service-card--search {
     background-color: #dff3fe;
 }
-.cart-megaphone{
+
+.service-card--megaphone {
     background-color: #fbe2f4;
 }
-.cart-open-email{
+
+.service-card--email {
     background-color: #eceff4;
 }
-
