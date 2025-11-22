@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,45 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__filter">
+
+            <label for="selector-header-sort" class="header__label">
+                Sort by
+                <select class="header__sort-select" name="header-sort" id="selector-header-sort">
+                    <option value="name">Name</option>
+                    <option value="age">Age</option>
+                </select>
+            </label>
+
+            <fieldset class="header__radio-group">
+                <legend class="header__radio-title">Filter</legend>
+
+                <div class="header__radio-item">
+                    <input class="header__radio-input" type="radio" name="header-filter" id="header-filter-all"
+                        value="all" checked>
+                    <label class="header__radio-label" for="header-filter-all">All</label>
+                </div>
+
+                <div class="header__radio-item">
+                    <input class="header__radio-input" type="radio" name="header-filter" id="header-filter-passing"
+                        value="passing">
+                    <label class="header__radio-label" for="header-filter-passing">Passing</label>
+                </div>
+
+                <div class="header__radio-item">
+                    <input class="header__radio-input" type="radio" name="header-filter" id="header-filter-failed"
+                        value="failed">
+                    <label class="header__radio-label" for="header-filter-failed">Failed</label>
+                </div>
+
+            </fieldset>
+
+            <button class="header__submit">Update</button>
+        </div>
+    </header>
+
+
     <main class="main">
         <div class="students">
             <div class="students__list students__items">
