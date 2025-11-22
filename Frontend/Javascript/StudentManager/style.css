@@ -1,0 +1,31 @@
+.students{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.students__items{
+    flex: 1 1 calc(50% - 2rem);
+}
+
+.students__table{
+    text-align: center;
+    margin-inline: auto;
+    min-width: 20rem;
+}
+
+.students__table td , .students__table th{
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.students__table th{
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
